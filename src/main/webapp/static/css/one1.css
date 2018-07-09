@@ -1,0 +1,306 @@
+body, html {
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* Reset */
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+a {
+	color: #2fa0ec;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #74777b;
+}
+
+.container {
+	text-align: center;
+	overflow: hidden;
+	margin-top: 0px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section, main {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.banner {
+	height: 100px;
+	margin: 5px auto;
+	width: 70%;
+	font-size: 24px;
+	font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+
+.texts {
+	line-height: 40px;
+	padding: 0px 0 0 80px;
+	text-shadow: 2px 1px #00aaff;
+}
+
+h3 {
+	font-size: 28px;
+	color: #00aaff;
+	font-family: "PingFang SC"
+}
+
+.texts p {
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	-webkit-transform: translate(110px);
+	-moz-transform: translate(110px);
+	-o-transform: translate(110px);
+	-ms-transform: translate(110px);
+	transform: translate(110px);
+}
+
+.texts p:hover {
+	padding-left: 25px
+}
+
+.texts p:nth-child(1) {
+	-webkit-animation: animations 4s ease-out 1s backwards;
+	-moz-animation: animations 4s ease-out 1s backwards;
+	-o-animation: animations 4s ease-out 1s backwards;
+	-ms-animation: animations 4s ease-out 1s backwards;
+	animation: animations 4s ease-out 1s backwards;
+}
+
+.texts p:nth-child(2) {
+	-webkit-animation: animations 4s ease-out 5s backwards;
+	-moz-animation: animations 4s ease-out 5s backwards;
+	-o-animation: animations 4s ease-out 5s backwards;
+	-ms-animation: animations 4s ease-out 5s backwards;
+	animation: animations 4s ease-out 5s backwards;
+}
+
+@
+-webkit-keyframes animations { 0% {
+	-webkit-transform: translate(0);
+	opacity: 0;
+}
+
+50%
+{
+-webkit-transform
+:translate(120px)
+;
+
+    
+opacity
+:
+.5
+;
+
+    
+}
+100%
+{
+-webkit-transform
+:translate(110px)
+;
+
+    
+opacity
+:
+1;
+
+    
+}
+}
+@
+-moz-keyframes animations { 0% {
+	-moz-transform: translate(0);
+	opacity: 0;
+}
+
+50%
+{
+-moz-transform
+:translate(120px)
+;
+
+    
+opacity
+:
+.5
+;
+
+    
+}
+100%
+{
+-moz-transform
+:translate(110px)
+;
+
+    
+opacity
+:
+1;
+
+    
+}
+}
+@
+-o-keyframes animations { 0% {
+	-o-transform: translate(0);
+	opacity: 0;
+}
+
+50%
+{
+-o-transform
+:translate(120px)
+;
+
+    
+opacity
+:
+.5
+;
+
+    
+}
+100%
+{
+-o-transform
+:translate(110px)
+;
+
+    
+opacity
+:
+1;
+
+    
+}
+}
+@
+-ms-keyframes animations { 0% {
+	-ms-transform: translate(0);
+	opacity: 0;
+}
+
+50%
+{
+-ms-transform
+:translate(120px)
+;
+
+    
+opacity
+:
+.5
+;
+
+    
+}
+100%
+{
+-ms-transform
+:translate(110px)
+;
+
+    
+opacity
+:
+1;
+
+    
+}
+}
+@
+keyframes animations { 0% {
+	transform: translate(0);
+	opacity: 0;
+}
+50%
+{
+transform
+:translate(120px)
+;
+
+    
+opacity
+:
+.5
+;
+
+    
+}
+100%
+{
+transform
+:translate(110px)
+;
+
+    
+opacity
+:
+1;
+
+    
+}
+}

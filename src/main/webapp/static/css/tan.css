@@ -1,0 +1,153 @@
+#t {
+	position: absolute;
+	float: left;
+	left: 0px;
+	top: 0px;
+}
+
+#t_div {
+	WIDTH: 280px;
+	position: absolute;
+	float: left;
+	top: 25%;
+	left: 30%;
+	z-index: 999;
+	clear: both;
+	overflow: hidden;
+}
+
+#a {
+	float: left;
+	position: absolute;
+	left: -30px;
+	top: 40px;
+}
+
+.al {
+	opacity: 0.80;
+	filter: progid:DXImageTransform.Microsoft.Alpha(style=0, opacity=80,
+		finishOpacity=100);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	position: absolute;
+	float: left;
+	overflow: hidden;
+}
+
+.al2 {
+	opacity: 0.00;
+	filter: progid:DXImageTransform.Microsoft.Alpha(style=0, opacity=0,
+		finishOpacity=100);
+}
+
+U {
+	DISPLAY: block;
+	OVERFLOW: hidden;
+	HEIGHT: 1px
+}
+
+U.f1 {
+	background-color: #00aaff;
+	BACKGROUND: #00aaff;
+	MARGIN: 0px 3px
+}
+
+U.f2 {
+	background-color: #00aaff;
+	BORDER-RIGHT: #00aaff 2px solid;
+	MARGIN: 0px 1px;
+	BORDER-LEFT: #00aaff 2px solid
+}
+
+U.f3 {
+	background-color: #00aaff;
+	BORDER-RIGHT: #00aaff 1px solid;
+	MARGIN: 0px 1px;
+	BORDER-LEFT: #00aaff 1px solid
+}
+
+.d_top {
+	clear: both;
+	overflow: hidden;
+	background-color: #00aaff;
+	color: #fff;
+	height: 29px;
+	vertical-align: bottom;
+}
+
+.d_top a {
+	float: right;
+	margin-top: 4px;
+	margin-right: 10px;
+	font-size: 16px;
+	width: 18px;
+	color: red;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.d_top span {
+	float: left;
+	font-size: 16px;
+	margin-left: 20px;
+	margin-top: 6px;
+}
+
+.d_body {
+	BORDER-RIGHT: #00aaff 3px solid;
+	BORDER-LEFT: #00aaff 3px solid;
+	padding: 10px;
+	height: 120px;
+	background-color: #fff;
+}
+
+.d_foot {
+	clear: both;
+	overflow: hidden;
+	background-color: #00aaff;
+	height: 2px;
+}
+
+#loginform {
+	float: center;
+}
+
+.uinArea {
+	float: center;
+	height: 100px;
+	width: 200px;
+}
+
+.inputOuter {
+	width: 80px;
+	height: 35px;
+}
+
+.inputOuter input {
+	float: left;
+	font-size: 20px;
+	margin-left: 16px;
+	margin-top: 6px;
+}
+
+input#u .inputstyle {
+	width: 80px;
+	height: 30px;
+}
+
+.submit {
+	margin-bottom: 10px;
+	width: 200px;
+	height: 80px;
+}
+
+.submit button {
+	float: right;
+	margin-right: 10px;
+	font-size: 16px;
+	width: 60px;
+	height: 28px;
+}

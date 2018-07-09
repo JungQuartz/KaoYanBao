@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="dao.DiaryMapper">
+	<resultMap id="BaseResultMap" type="model.Diary">
+		<id column="id" property="ID" jdbcType="INTEGER" />
+		<result column="userid" property="UID" jdbcType="INTEGER" />
+		<result column="title" property="title" jdbcType="VARCHAR" />
+		<result column="content" property="content" jdbcType="VARCHAR" />
+		<result column="date" property="date" jdbcType="TIMESTAMP" />
+		<association property="user" javaType="model.User">
+			<id column="id" property="ID" />
+			<result column="account" property="account" jdbcType="VARCHAR" />
+			<result column="nickname" property="nickname" jdbcType="VARCHAR" />
+		</association>
+	</resultMap>
+
+	<insert id="addDiary" parameterType="model.Diary">
+		insert into diary (userid,
+		title, content,date)
+		values
+		(#{UID,jdbcType=INTEGER},
+		#{title,jdbcType=VARCHAR},
+		#{content,jdbcType=VARCHAR},
+		#{date,jdbcType=TIMESTAMP})
+	</insert>
+
+	<select id="selectByUserID" resultMap="BaseResultMap">
+		select
+		diary.*,user.*
+		from diary,user
+		where
+		diary.userid=#{UID,jdbcType=INTEGER} and diary.userid=user.id
+	</select>
+
+	<select id="selectByDiaryID" resultMap="BaseResultMap">
+		select
+		diary.*,user.*
+		from diary,user
+		where
+		diary.id=#{ID,jdbcType=INTEGER} and diary.userid=user.id
+	</select>
+
+	<delete id="deleteByID" parameterType="java.lang.Integer">
+		delete from diary
+		where id
+		= #{ID,jdbcType=INTEGER}
+	</delete>
+	<delete id="deleteByUserID" parameterType="java.lang.Integer">
+		delete from diary
+		where userid
+		= #{UID,jdbcType=INTEGER}
+	</delete>
+	
+<select id="existTitle" resultType="java.lang.Integer">
+		select
+		count(*)
+		from diary
+		where
+		diary.title=#{UID,jdbcType=VARCHAR}
+	</select>
+
+</mapper>
